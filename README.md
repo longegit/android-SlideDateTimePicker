@@ -1,1 +1,1 @@
-# android-SlideDateTimePicker
+https://github.com/jjobes/SlideDateTimePicker.git
