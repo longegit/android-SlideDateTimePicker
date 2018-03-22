@@ -52,7 +52,7 @@ public class TimeFragment extends Fragment
 
         try
         {
-            mCallback = (TimeChangedListener) getTargetFragment();
+            mCallback = (TimeChangedListener) getParentFragment();
         }
         catch (ClassCastException e)
         {
