@@ -1,6 +1,7 @@
 package com.github.jjobes.slidedatetimepicker;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -65,6 +66,9 @@ public class CustomViewPager extends ViewPager
                 height = h;
         }
 
+        if (height == 0) {
+            height = Resources.getSystem().getDisplayMetrics().heightPixels;
+        }
         heightMeasureSpec = MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY);
 
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
